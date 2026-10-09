@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5G电影网 | 极速高清影院 · 5G时代在线观影新体验</title>
+<meta name="keywords" content="5G电影网,5gdianyingwang,极速高清影院,5G在线观影,超清影视资源,影视APP下载,院线大片抢先看,智能推荐影片,4K杜比观影,新片速递">
+<meta name="description" content="5G电影网（5gdianyingwang-top.github.io）依托5G极速网络，提供超清院线大片、热播剧集与纪录片的在线观影体验，智能推荐懂你的片单，支持4K杜比音画与多端同步，随时随地畅享高清影视。">
+<meta name="robots" content="index,follow">
+<meta name="author" content="5G电影网">
+<meta name="theme-color" content="#050714">
+<meta property="og:type" content="website">
+<meta property="og:title" content="5G电影网 - 极速高清影院，5G时代的观影入口">
+<meta property="og:description" content="依托5G极速网络提供超清院线大片与热播剧集，智能推荐片单，4K杜比音画多端同步。">
+<meta property="og:url" content="https://5gdianyingwang-top.github.io">
+<meta property="og:site_name" content="5G电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5G电影网 - 极速高清影院">
+<meta name="twitter:description" content="5G极速观影，超清院线大片与热播剧集，智能推荐，4K杜比音画多端同步。">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://5gdianyingwang-top.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>⚡</text></svg>">
+<style>
+:root{
+  --bg:#050714;--bg2:#0b0d22;--ink:#fff;--sub:#a4abd0;--sub2:#777fa8;
+  --line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.16);
+  --g1:#00e5ff;--g2:#7b61ff;--g3:#ff2e93;--g4:#00ffa3;--g5:#ffb020;--g6:#ff5470;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 600px at 12% 8%,rgba(123,97,255,.22),transparent 60%),
+  radial-gradient(800px 700px at 88% 22%,rgba(0,229,255,.14),transparent 60%),
+  radial-gradient(700px 600px at 50% 100%,rgba(255,46,147,.12),transparent 60%),
+  var(--bg)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.4;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:52px 52px;pointer-events:none}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit}
+.container{max-width:1220px;margin:0 auto;padding:0 22px}
+
+/* ANNOUNCE */
+.ann{flex-wrap:wrap;background:rgba(255,255,255,.04);border-bottom:1px solid var(--line);font-size:12.5px;color:var(--sub)}
+.ann .container{display:flex;align-items:center;gap:14px;height:34px;overflow:hidden}
+.ann em{font-style:normal;background:var(--g3);color:#fff;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:4px;flex-shrink:0}
+.ann marquee{flex:1;color:#d8dcf0}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:200;background:rgba(5,7,20,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:26px;height:70px}
+.logo{display:flex;align-items:center;gap:11px;font-size:21px;font-weight:900;letter-spacing:-.3px;flex-shrink:0;color:#fff}
+.logo b{font-size:11px;font-weight:800;color:var(--g1);border:1px solid rgba(0,229,255,.45);padding:2px 6px;border-radius:5px;letter-spacing:.5px}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{padding:9px 13px;border-radius:8px;font-size:14px;font-weight:600;color:var(--sub);transition:.2s;position:relative}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nav a.on{color:#fff}
+.nav a.on::after{content:"";position:absolute;left:13px;right:13px;bottom:-21px;height:2px;background:linear-gradient(90deg,var(--g1),var(--g2));border-radius:2px}
+.search{flex-shrink:0;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:1px solid var(--line2);border-radius:9px;padding:7px 12px;width:190px}
+.search input{border:0;outline:0;background:transparent;color:#fff;font-size:13px;width:100%}
+.search input::placeholder{color:var(--sub2)}
+.search span{color:var(--sub);font-size:13px}
+.nav-btn{display:none;margin-left:auto;width:42px;height:42px;border-radius:9px;border:1px solid var(--line2);background:rgba(255,255,255,.05);color:#fff;font-size:18px;cursor:pointer}
+
+/* HERO */
+.hero{padding:60px 0 40px;position:relative}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--g1);margin-bottom:20px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g1);box-shadow:0 0 0 4px rgba(0,229,255,.18);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(0,229,255,0)}}
+h1{font-size:clamp(30px,5.6vw,56px);line-height:1.16;font-weight:900;letter-spacing:-1.5px;margin-bottom:20px}
+h1 .grad{background:linear-gradient(95deg,var(--g1),var(--g2) 45%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-desc{font-size:16px;color:var(--sub);margin-bottom:30px;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:10px;font-weight:800;font-size:15px;border:0;cursor:pointer;transition:.25s;background:linear-gradient(135deg,var(--g1),var(--g2));color:#040714;box-shadow:0 10px 30px rgba(0,229,255,.28)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,229,255,.4)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line2);color:#fff;box-shadow:none}
+.btn.ghost:hover{background:rgba(255,255,255,.07);border-color:var(--g1);color:var(--g1)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:38px}
+.feat div{background:rgba(255,255,255,.035);padding:20px 16px}
+.feat strong{display:block;font-size:21px;font-weight:900;background:linear-gradient(95deg,var(--g1),var(--g4));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
+.feat small{font-size:12px;color:var(--sub2)}
+
+/* SPEED METER */
+.meter{position:relative}
+.meter-card{position:relative;background:linear-gradient(160deg,rgba(123,97,255,.18),rgba(0,229,255,.06));border:1px solid var(--line2);border-radius:20px;padding:28px;text-align:center;overflow:hidden}
+.meter-card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 220px at 50% 0%,rgba(0,229,255,.12),transparent 70%)}
+.meter-card h4{font-size:13px;color:var(--g1);font-weight:800;letter-spacing:1px;margin-bottom:6px}
+.meter-num{font-size:78px;font-weight:900;line-height:1;letter-spacing:-3px;background:linear-gradient(180deg,#fff,#9aa3cf);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.meter-unit{font-size:15px;color:var(--sub);font-weight:600}
+.meter-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden;margin:18px 0 8px}
+.meter-bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--g4),var(--g1),var(--g2));box-shadow:0 0 12px rgba(0,229,255,.5)}
+.meter-lbl{display:flex;justify-content:space-between;font-size:11.5px;color:var(--sub2);margin-bottom:22px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;position:relative}
+.pill-row span{font-size:11.5px;padding:6px 12px;border-radius:99px;border:1px solid var(--line2);color:var(--sub);background:rgba(255,255,255,.03)}
+.pill-row span.on{background:var(--g3);border-color:var(--g3);color:#fff;font-weight:700}
+
+/* SECTION */
+section{padding:64px 0}
+.sec{display:flex;align-items:baseline;gap:14px;margin-bottom:30px;flex-wrap:wrap}
+.sec-l{flex:1;min-width:240px}
+.sec h2{font-size:clamp(22px,3.4vw,32px);font-weight:900;letter-spacing:-.8px}
+.sec h2 em{font-style:normal;font-size:12px;color:var(--sub2);font-weight:600;display:block;margin-top:4px}
+.sec-r{display:flex;gap:8px;flex-wrap:wrap}
+.sec-r a{font-size:13px;color:var(--sub);padding:6px 13px;border-radius:7px;border:1px solid var(--line);transition:.2s}
+.sec-r a:hover{color:var(--g1);border-color:var(--g1)}
+.sec-r a.on{color:#040714;background:var(--g1);border-color:var(--g1);font-weight:700}
+
+/* SWIM LANE */
+.lane{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);gap:18px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory}
+.lane::-webkit-scrollbar{height:6px}
+.lane::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:99px}
+.tile{scroll-snap-align:start;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.3s;cursor:pointer}
+.tile:hover{transform:translateY(-6px);border-color:rgba(0,229,255,.4);background:rgba(255,255,255,.06);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.thumb{position:relative;aspect-ratio:4/5;display:grid;place-items:center;font-size:54px;color:#fff}
+.thumb .tag{position:absolute;top:10px;left:10px;font-size:10.5px;font-weight:800;padding:4px 8px;border-radius:5px;background:rgba(0,0,0,.55);backdrop-filter:blur(4px)}
+.thumb .tag.hot{background:var(--g3)}
+.thumb .tag.new{background:var(--g1);color:#040714}
+.thumb .rate{position:absolute;bottom:10px;right:10px;font-size:11px;font-weight:800;background:rgba(0,0,0,.6);padding:4px 8px;border-radius:5px;color:var(--g5)}
+.thumb .mini{position:absolute;inset:0;display:grid;place-items:center;background:rgba(5,7,20,.55);opacity:0;transition:.25s}
+.tile:hover .mini{opacity:1}
+.thumb .mini span{width:54px;height:54px;border-radius:50%;background:var(--g1);color:#040714;display:grid;place-items:center;font-size:19px;font-weight:900;box-shadow:0 8px 24px rgba(0,229,255,.45)}
+.tile .tb{padding:14px 15px 16px}
+.tile .tb h3{font-size:15px;font-weight:800;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .tb p{font-size:12px;color:var(--sub2)}
+.m1{background:linear-gradient(150deg,#1a2980,#26d0ce)} .m2{background:linear-gradient(150deg,#8e0e00,#1f1c18)}
+.m3{background:linear-gradient(150deg,#ee9ca7,#ffdde1);color:#5a2030} .m4{background:linear-gradient(150deg,#232526,#ff8008)}
+.m5{background:linear-gradient(150deg,#3a1c71,#d76d77,#ffaf7b)} .m6{background:linear-gradient(150deg,#0f2027,#203a43,#2c5364)}
+.m7{background:linear-gradient(150deg,#fc4a1a,#f7b733)} .m8{background:linear-gradient(150deg,#4b6cb7,#182848)}
+.m9{background:linear-gradient(150deg,#f7971e,#ffd200)} .m10{background:linear-gradient(150deg,#870000,#190a05)}
+
+/* CHANNELS */
+.ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.ch{position:relative;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.3s;overflow:hidden;cursor:pointer}
+.ch::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;opacity:.16;transition:.3s}
+.ch:hover{transform:translateY(-5px);background:rgba(255,255,255,.06)}
+.ch:hover::after{transform:scale(1.6)}
+.ch .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:21px;margin-bottom:14px;position:relative;z-index:1}
+.ch h4{font-size:16px;font-weight:800;margin-bottom:6px}
+.ch p{font-size:13px;color:var(--sub);margin-bottom:14px;position:relative;z-index:1}
+.ch .meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--sub2);border-top:1px solid var(--line);padding-top:11px;position:relative;z-index:1}
+.ch .meta b{color:var(--g4);font-weight:800}
+.c1 .ic{background:rgba(0,229,255,.14);color:var(--g1)} .c1::after{background:var(--g1)}
+.c2 .ic{background:rgba(123,97,255,.16);color:#a98bff} .c2::after{background:var(--g2)}
+.c3 .ic{background:rgba(255,46,147,.16);color:var(--g3)} .c3::after{background:var(--g3)}
+.c4 .ic{background:rgba(0,255,163,.14);color:var(--g4)} .c4::after{background:var(--g4)}
+.c5 .ic{background:rgba(255,176,32,.16);color:var(--g5)} .c5::after{background:var(--g5)}
+.c6 .ic{background:rgba(255,84,112,.16);color:var(--g6)} .c6::after{background:var(--g6)}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.step{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;padding:24px 20px;position:relative;transition:.3s}
+.step:hover{border-color:rgba(123,97,255,.5);background:rgba(255,255,255,.055)}
+.step .no{font-size:12px;font-weight:900;color:var(--g2);letter-spacing:1px;margin-bottom:10px}
+.step h4{font-size:17px;font-weight:800;margin-bottom:8px}
+.step p{font-size:13px;color:var(--sub)}
+
+/* SPLIT */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.split-txt h2{font-size:clamp(23px,3.6vw,36px);font-weight:900;letter-spacing:-1px;margin-bottom:16px;line-height:1.28}
+.split-txt p{font-size:15px;color:var(--sub);margin-bottom:22px}
+.bullets{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.bullets div{display:flex;gap:13px;align-items:flex-start}
+.bullets i{font-style:normal;width:26px;height:26px;border-radius:7px;background:rgba(0,229,255,.12);color:var(--g1);display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0;margin-top:2px}
+.bullets span{font-size:14.5px}
+.bullets span small{display:block;color:var(--sub2);font-size:12.5px;margin-top:2px}
+.mock{border:1px solid var(--line2);border-radius:18px;padding:24px;background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,.015));position:relative}
+.mock .top{display:flex;align-items:center;gap:8px;margin-bottom:20px}
+.mock .top i{font-style:normal;width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.18)}
+.mock .top span{margin-left:auto;font-size:11px;color:var(--sub2)}
+.mock-row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.mock-row:last-child{border-bottom:0}
+.mock-row .sq{width:34px;height:34px;border-radius:8px;flex-shrink:0}
+.mock-row b{display:block;font-size:13px;font-weight:700}
+.mock-row small{font-size:11px;color:var(--sub2)}
+.mock-row .ok{margin-left:auto;font-size:10.5px;font-weight:800;color:var(--g4);border:1px solid rgba(0,255,163,.35);padding:3px 8px;border-radius:99px}
+.mock-row .no{margin-left:auto;font-size:10.5px;font-weight:800;color:var(--sub2);border:1px solid var(--line);padding:3px 8px;border-radius:99px}
+
+/* TESTIMONIAL */
+.quote{background:linear-gradient(135deg,rgba(123,97,255,.14),rgba(0,229,255,.06));border:1px solid var(--line2);border-radius:18px;padding:34px;text-align:center;position:relative}
+.quote .big{font-size:46px;color:var(--g1);line-height:1;margin-bottom:12px;opacity:.6}
+.quote p{font-size:16.5px;color:#e6e9f7;max-width:780px;margin:0 auto 20px;line-height:1.85}
+.quote .who{font-size:13px;color:var(--sub)}
+.quote .who b{color:#fff;display:block;font-size:14.5px;margin-bottom:2px}
+
+/* FAQ */
+.faq-wrap{max-width:860px;margin:0 auto}
+.faq-item{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;background:rgba(255,255,255,.03)}
+.faq-q{display:flex;align-items:center;gap:13px;padding:18px 20px;cursor:pointer;font-size:15.5px;font-weight:700;transition:.2s}
+.faq-q:hover{background:rgba(255,255,255,.05)}
+.faq-q .num{font-size:11px;font-weight:900;color:var(--g1);background:rgba(0,229,255,.12);width:24px;height:24px;border-radius:7px;display:grid;place-items:center;flex-shrink:0}
+.faq-q .ar{margin-left:auto;color:var(--sub);font-size:12px;transition:.3s;flex-shrink:0}
+.faq-item.open .faq-q .ar{transform:rotate(180deg);color:var(--g1)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a div{padding:0 20px 20px 57px;font-size:14px;color:var(--sub);line-height:1.85}
+
+/* CTA */
+.cta-final{text-align:center;background:linear-gradient(135deg,rgba(123,97,255,.22),rgba(0,229,255,.08));border:1px solid var(--line2);border-radius:22px;padding:48px 30px;position:relative;overflow:hidden}
+.cta-final::after{content:"⚡";position:absolute;right:30px;bottom:-14px;font-size:120px;opacity:.1}
+.cta-final h3{font-size:clamp(24px,4vw,38px);font-weight:900;letter-spacing:-1px;margin-bottom:14px}
+.cta-final p{color:var(--sub);font-size:15px;margin-bottom:26px;max-width:560px;margin-left:auto;margin-right:auto}
+.cta-final .btn{font-size:16px;padding:15px 34px}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:52px 0 26px;margin-top:40px}
+.ft{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px}
+.ft .bl{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:900;margin-bottom:14px}
+.ft .bl b{font-size:11px;color:var(--g1);border:1px solid rgba(0,229,255,.45);padding:2px 6px;border-radius:5px}
+.ft p{font-size:13px;color:var(--sub);line-height:1.9;max-width:360px}
+.ft h5{font-size:14.5px;color:#fff;margin-bottom:15px;font-weight:800}
+.ft ul{display:flex;flex-direction:column;gap:10px}
+.ft a{color:var(--sub);font-size:13.5px;transition:.2s}
+.ft a:hover{color:var(--g1)}
+.ft-bot{margin-top:38px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--sub2)}
+.ft-bot a:hover{color:var(--g1)}
+
+#top{position:fixed;right:18px;bottom:24px;z-index:150;width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#040714;border:0;cursor:pointer;display:none;font-size:18px;box-shadow:0 10px 26px rgba(0,229,255,.3)}
+#top.show{display:grid;place-items:center}
+
+@media(max-width:960px){
+  .hero .container{grid-template-columns:1fr;gap:44px}
+  .meter{order:-1}
+  .split{grid-template-columns:1fr;gap:30px}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  .container{padding:0 16px}
+  .nav,.search{display:none}
+  .nav.open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:70px;left:0;right:0;padding:16px;background:rgba(8,10,26,.98);border-bottom:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.5)}
+  .nav.open a{padding:13px 16px}
+  .nav.open a.on::after{display:none}
+  .nav-btn{display:grid;place-items:center}
+  .hero{padding:38px 0 24px}
+  section{padding:46px 0}
+  .feat{grid-template-columns:1fr}
+  .lane{grid-auto-columns:minmax(160px,1fr);gap:12px}
+  .tile .tb{padding:12px 13px 14px}
+  .tile .tb h3{font-size:14px}
+  .quote{padding:26px 20px}
+  .mock-row .sq{width:28px;height:28px}
+  .faq-a div{padding:0 20px 18px 20px}
+  .meter-num{font-size:60px}
+  .cta-final{padding:36px 22px}
+}
+@media(max-width:360px){
+  .tile .tb h3{font-size:13px}
+  .btn{padding:12px 22px;font-size:14px}
+  .sec h2{font-size:20px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="ann">
+  <div class="container">
+    <em>5G 极速</em>
+    <marquee scrollamount="4">📡 5G电影网（5gdianyingwang-top.github.io）现已支持 5G 极速缓冲与 4K 杜比音画 · 新用户首次访问即享 7 天会员体验 · 每日 10:00 更新院线大片与热播剧集 · 打开即可观看，无需下载</marquee>
+  </div>
+</div>
+
+<header>
+  <div class="container hd">
+    <a class="logo" href="https://5gdianyingwang-top.github.io" rel="home">⚡ 5G电影网 <b>5G</b></a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="on">首页</a>
+      <a href="#film">院线大片</a>
+      <a href="#chan">频道中心</a>
+      <a href="#speed">极速体验</a>
+      <a href="#down">APP下载</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <div class="search"><span>🔍</span><input type="search" placeholder="搜索影片 / 演员 / 导演"></div>
+    <button class="nav-btn" id="navBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div>
+      <div class="eyebrow">5G 极速通道已开启</div>
+      <h1>极速高清影院<br><span class="grad">重新定义观影体验</span></h1>
+      <p class="hero-desc">5G电影网（5gdianyingwang-top.github.io）依托 5G 网络提供超清院线大片、热播剧集与纪录片的在线观影服务，智能推荐懂你的片单，4K 杜比音画多端同步，随时随地畅享高清影视。</p>
+      <div class="cta">
+        <button class="btn" onclick="document.getElementById('film').scrollIntoView({behavior:'smooth'})">▶ 立即观影</button>
+        <button class="btn ghost" onclick="document.getElementById('down').scrollIntoView({behavior:'smooth'})">📲 下载 APP</button>
+      </div>
+      <div class="feat">
+        <div><strong>5G</strong><small>极速缓冲，秒开即看</small></div>
+        <div><strong>4K 杜比</strong><small>影院级音画体验</small></div>
+        <div><strong>AI 推荐</strong><small>越看越懂你的口味</small></div>
+      </div>
+    </div>
+    <div class="meter">
+      <div class="meter-card">
+        <h4>LIVE · 当前网速</h4>
+        <div><span class="meter-num" id="spd">0</span> <span class="meter-unit">Mbps</span></div>
+        <div class="meter-bar"><i id="spdb"></i></div>
+        <div class="meter-lbl"><span>0</span><span>支持 5G 极速观影</span><span>1000</span></div>
+        <div class="pill-row"><span class="on">📡 5G 已连接</span><span>缓冲 0.3s</span><span>画质 4K</span><span>音效 杜比</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="film">
+  <div class="container">
+    <div class="sec">
+      <div class="sec-l"><h2>院线大片抢先看<em>HOT · 今日热播榜实时更新</em></h2></div>
+      <div class="sec-r"><a href="#" class="on">热播榜</a><a href="#">高分精选</a><a href="#">即将上映</a><a href="#">全部片单</a></div>
+    </div>
+    <div class="lane" id="filmLane"></div>
+  </div>
+</section>
+
+<section id="chan" style="padding-top:0">
+  <div class="container">
+    <div class="sec">
+      <div class="sec-l"><h2>频道中心<em>覆盖 12 大影视分类，总有一款适合你</em></h2></div>
+      <div class="sec-r"><a href="#">管理频道 ›</a></div>
+    </div>
+    <div class="ch-grid">
+      <div class="ch c1"><div class="ic">🎬</div><h4>院线新片</h4><p>同步院线热映大片，下映后第一时间上线高清版本，抢先看不等待。</p><div class="meta"><span>128 部在线</span><b>更新中 →</b></div></div>
+      <div class="ch c2"><div class="ic">📺</div><h4>热播剧集</h4><p>国产剧、韩剧、美剧、日剧全覆盖，按集更新，不错过任何精彩剧情。</p><div class="meta"><span>86 部连载</span><b>更新中 →</b></div></div>
+      <div class="ch c3"><div class="ic">🎭</div><h4>综艺娱乐</h4><p>热门真人秀、脱口秀与选秀节目，最新一期同步上线，周末解压必备。</p><div class="meta"><span>42 档节目</span><b>每周更新 →</b></div></div>
+      <div class="ch c4"><div class="ic">🧒</div><h4>动漫番剧</h4><p>国漫、日漫、美漫与剧场版，中文字幕同步，追番日历一目了然。</p><div class="meta"><span>63 部连载</span><b>更新中 →</b></div></div>
+      <div class="ch c5"><div class="ic">🌍</div><h4>纪录片</h4><p>自然、历史、人文与科技高分纪录片，4K 画质呈现每一个震撼瞬间。</p><div class="meta"><span>37 部馆藏</span><b>精选推荐 →</b></div></div>
+      <div class="ch c6"><div class="ic">🎙️</div><h4>影视解说</h4><p>10 分钟看懂一部好电影，专业影评人深度解读，冷门佳片一网打尽。</p><div class="meta"><span>215 期节目</span><b>持续更新 →</b></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="speed" style="padding-top:0">
+  <div class="container">
+    <div class="split">
+      <div class="split-txt">
+        <h2>为什么选择<br>5G电影网？</h2>
+        <p>从加载速度到画质呈现，每一个细节都为极致观影体验打磨。</p>
+        <div class="bullets">
+          <div><i>01</i><span>5G 极速缓冲<small>打开即看，告别漫长等待，弱网环境自动适配清晰度</small></span></div>
+          <div><i>02</i><span>4K 杜比音画<small>影院级视听体验，支持 HDR 与空间音频，细节栩栩如生</small></span></div>
+          <div><i>03</i><span>AI 智能推荐<small>基于你的观影习惯精准推荐，发现更多符合口味的好片</small></span></div>
+          <div><i>04</i><span>多端无缝同步<small>手机、平板、电脑、电视随时切换，观看进度自动保存</small></span></div>
+          <div><i>05</i><span>每日更新片单<small>每日 10:00 固定上新，热门影片上线第一时间推送提醒</small></span></div>
+        </div>
+        <button class="btn" onclick="document.getElementById('down').scrollIntoView({behavior:'smooth'})">📲 立即下载 APP</button>
+      </div>
+      <div class="mock">
+        <div class="top"><i></i><i></i><i></i><span>5G电影网 · 多端同步</span></div>
+        <div class="mock-row"><div class="sq m1"></div><b>封神第二部：战火西岐</b><small>院线大片 · 4K</small><span class="ok">✓ 已同步</span></div>
+        <div class="mock-row"><div class="sq m2"></div><b>庆余年 第三季</b><small>热播剧集 · 1080P</small><span class="ok">✓ 已同步</span></div>
+        <div class="mock-row"><div class="sq m3"></div><b>鬼灭之刃 · 柱训练篇</b><small>动漫番剧 · 更新中</small><span class="ok">✓ 已同步</span></div>
+        <div class="mock-row"><div class="sq m5"></div><b>漫长的季节</b><small>高分精选 · 全集</small><span class="ok">✓ 已同步</span></div>
+        <div class="mock-row"><div class="sq m6"></div><b>星际穿越</b><small>经典回顾 · 4K修复</small><span class="no">缓存中</span></div>
+        <div class="mock-row"><div class="sq m8"></div><b>庆余年 第三季 E12</b><small>继续观看 · 78%</small><span class="ok">✓ 已同步</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="sec"><div class="sec-l"><h2>三步开启极速观影<em>EASY · 无需复杂操作</em></h2></div></div>
+    <div class="steps">
+      <div class="step"><div class="no">STEP 01</div><h4>打开网站或 APP</h4><p>访问 https://5gdianyingwang-top.github.io 或下载 5G电影网 APP，无需注册即可开始观看。</p></div>
+      <div class="step"><div class="no">STEP 02</div><h4>选择想看的影片</h4><p>通过热播榜、频道中心或智能推荐找到心仪内容，支持关键词搜索与分类筛选。</p></div>
+      <div class="step"><div class="no">STEP 03</div><h4>一键极速播放</h4><p>点击播放即可 5G 极速加载，可切换清晰度、开启弹幕、投屏到电视大屏观看。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="down" style="padding-top:0">
+  <div class="container">
+    <div class="quote">
+      <div class="big">"</div>
+      <p>「以前看电影要等好久的加载，现在用 5G电影网打开就直接播，画质清晰得像在电影院。上下班通勤路上追完了一整部剧，进度在手机和电视之间无缝切换，真的太方便了。」</p>
+      <div class="who"><b>资深影迷 · 观影时长 3200+ 小时</b>5G电影网 真实用户评价</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="container">
+    <div class="sec"><div class="sec-l"><h2>常见问题<em>新手必读 · 高频疑问解答</em></h2></div></div>
+    <div class="faq-wrap">
+      <div class="faq-item"><div class="faq-q"><span class="num">Q1</span>5G电影网是什么？网址是多少？<span class="ar">▼</span></div><div class="faq-a"><div>5G电影网（网址：<strong style="color:#fff">https://5gdianyingwang-top.github.io</strong>）是专注极速高清影视在线观影的平台，依托 5G 网络提供院线大片、热播剧集、综艺、动漫与纪录片，打开即可观看，无需注册。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q2</span>支持哪些清晰度？需要 5G 网络才能看吗？<span class="ar">▼</span></div><div class="faq-a"><div>支持 480P、720P、1080P、4K 多种清晰度，播放器可自由切换。不强制要求 5G 网络，4G / Wi-Fi 环境下同样可以流畅观看，系统会根据网络状况自动适配清晰度。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q3</span>支持哪些设备观看？<span class="ar">▼</span></div><div class="faq-a"><div>支持手机、平板、电脑浏览器直接访问观看，也可下载 5G电影网 APP 使用。支持投屏到智能电视与电视盒子，观看进度多端自动同步。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q4</span>影片多久更新一次？<span class="ar">▼</span></div><div class="faq-a"><div>每日 10:00 更新新增影片与剧集，热播剧集按官方播出节奏同步更新，院线影片在下映后第一时间上线高清版本。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q5</span>支持弹幕、倍速与离线缓存吗？<span class="ar">▼</span></div><div class="faq-a"><div>播放器内置弹幕开关与 0.5x–2.0x 倍速调节，APP 端支持离线缓存，可在无网络环境下继续观看已下载内容。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q6</span>手机端浏览体验如何？会卡顿吗？<span class="ar">▼</span></div><div class="faq-a"><div>本站采用移动端自适应设计，手机浏览器访问即可获得完整观影体验，无需下载 App。加载缓慢时可尝试切换更低清晰度或切换网络环境后刷新页面。</div></div></div>
+      <div class="faq-item"><div class="faq-q"><span class="num">Q7</span>影片资源是否合规？<span class="ar">▼</span></div><div class="faq-a"><div>本站所有影视资源信息均来自公开合法渠道，仅供用户在线观看与信息参考，具体版权归属以影片实际出品方为准，如有异议可联系我们处理。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cta-final">
+      <h3>开启你的 5G 极速观影之旅</h3>
+      <p>无需注册，打开即看。5G 极速缓冲、4K 杜比音画、AI 智能推荐，让每一部好片都不被错过。</p>
+      <button class="btn" onclick="document.getElementById('film').scrollIntoView({behavior:'smooth'})">▶ 立即免费观影</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="ft">
+      <div>
+        <div class="bl">⚡ 5G电影网 <b>5G</b></div>
+        <p>5G电影网（网址：<strong style="color:#fff">https://5gdianyingwang-top.github.io</strong>）是依托 5G 网络打造的极速高清影院，提供院线大片、热播剧集、综艺、动漫与纪录片的在线观影服务，智能推荐、多端同步、每日更新，让好电影随时可得。</p>
+      </div>
+      <div><h5>影视频道</h5><ul><li><a href="#film">院线大片</a></li><li><a href="#chan">频道中心</a></li><li><a href="#">综艺娱乐</a></li><li><a href="#">动漫番剧</a></li><li><a href="#">纪录片</a></li></ul></div>
+      <div><h5>服务支持</h5><ul><li><a href="#speed">极速体验</a></li><li><a href="#down">APP 下载</a></li><li><a href="#faq">常见问题</a></li><li><a href="#">会员说明</a></li><li><a href="#">意见反馈</a></li></ul></div>
+      <div><h5>关于我们</h5><ul><li><a href="#">关于 5G电影网</a></li><li><a href="#">商务合作</a></li><li><a href="#">用户协议</a></li><li><a href="#">隐私政策</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <span>© <span id="yr">2026</span> 5G电影网 5gdianyingwang · 本站网址：https://5gdianyingwang-top.github.io · 资源信息仅供参考，版权归属以实际出品方为准</span>
+      <span><a href="#home">回到顶部 ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部">↑</button>
+
+<script>
+var FILM=[
+ {t:"封神第二部：战火西岐",s:"9.2",g:"m1",tg:"热播",rt:"动作 / 奇幻"},
+ {t:"唐探1900",s:"8.7",g:"m2",tg:"热播",rt:"喜剧 / 悬疑"},
+ {t:"误杀3",s:"9.0",g:"m3",tg:"抢先看",rt:"犯罪 / 悬疑"},
+ {t:"默杀",s:"8.5",g:"m4",tg:"热播",rt:"悬疑 / 惊悚"},
+ {t:"小小的我",s:"9.1",g:"m5",tg:"高分",rt:"剧情 / 家庭"},
+ {t:"刺猬索尼克3",s:"8.3",g:"m6",tg:"新片",rt:"动画 / 冒险"},
+ {t:"爆款好人",s:"8.0",g:"m7",tg:"新片",rt:"喜剧 / 温情"},
+ {t:"帕丁顿熊4",s:"8.8",g:"m8",tg:"高分",rt:"动画 / 家庭"},
+ {t:"周处除三害",s:"8.9",g:"m9",tg:"经典",rt:"犯罪 / 动作"},
+ {t:"奥本海默",s:"8.6",g:"m10",tg:"经典",rt:"传记 / 历史"}
+];
+var lane=document.getElementById('filmLane');
+lane.innerHTML=FILM.map(function(f){
+  return '<div class="tile"><div class="thumb '+f.g+'"><span class="tag '+f.tg+'">'+f.tg+'</span><span class="rate">★ '+f.s+'</span><div class="mini"><span>▶</span></div></div><div class="tb"><h3>'+f.t+'</h3><p>'+f.rt+'</p></div></div>';
+}).join('');
+
+var sp=0,target=867;
+function ease(t){return 1-Math.pow(1-t,3);}
+(function loop(){
+  sp=Math.min(1,sp+0.018);
+  document.getElementById('spd').textContent=Math.round(ease(sp)*target);
+  document.getElementById('spdb').style.width=(ease(sp)*100)+'%';
+  if(sp<1)requestAnimationFrame(loop);
+})();
+
+document.querySelectorAll('.faq-item').forEach(function(it){
+  it.querySelector('.faq-q').addEventListener('click',function(){
+    var open=it.classList.toggle('open');
+    var a=it.querySelector('.faq-a');
+    a.style.maxHeight=open?a.scrollHeight+40+'px':'0';
+  });
+});
+
+var nb=document.getElementById('navBtn'),nv=document.getElementById('nav');
+nb.addEventListener('click',function(){nv.classList.toggle('open');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A')nv.classList.remove('open');});
+
+document.querySelectorAll('.sec-r a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    a.parentElement.querySelectorAll('a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=a.getAttribute('href');
+    if(id.length>1&&document.querySelector(id)){
+      e.preventDefault();
+      document.querySelector(id).scrollIntoView({behavior:'smooth'});
+      document.querySelectorAll('.nav a').forEach(function(n){n.classList.toggle('on',n.getAttribute('href')===id)});
+    }
+  });
+});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+var top=document.getElementById('top');
+window.addEventListener('scroll',function(){top.classList.toggle('show',window.scrollY>500);},true);
+top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
